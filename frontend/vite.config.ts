@@ -4,5 +4,10 @@ import react from '@vitejs/plugin-react'
 // In development, /api calls are proxied to the Express backend.
 export default defineConfig({
   plugins: [react()],
-  server: { proxy: { '/api': 'http://localhost:5000' } },
+  base: '/adnyan-foundation/',
+  server: {
+    proxy: {
+      '/api': 'http://localhost:5000',
+    },
+  },
 })
