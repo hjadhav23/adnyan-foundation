@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { asset } from '../asset'
 import Slider from '../components/Slider'
 import Reveal from '../components/Reveal'
 import Counter from '../components/Counter'
@@ -52,7 +53,7 @@ export default function Home() {
             {stories.map((s, i) => (
               <Reveal key={s.id ?? i} delay={i * 80}>
                 <SmartLink to={s.link || '#'} className="story">
-                  <div className="story-img" style={{ backgroundImage: `url(${s.image})` }} />
+                  <div className="story-img" style={{ backgroundImage: `url(${asset(s.image)})` }} />
                   <div className="story-text">
                     <h3>{s.title}</h3>
                     <h4>{s.subtitle}</h4>

@@ -1,3 +1,4 @@
+import { asset } from '../asset'
 import PageShell from '../components/PageShell'
 import Reveal from '../components/Reveal'
 
@@ -13,7 +14,7 @@ export default function Awards() {
       <div className="award-grid">
         {ITEMS.map((a, i) => (
           <Reveal key={a.img} delay={i * 80}>
-            <figure className="award"><img src={a.img} alt="" /><figcaption>{a.text}</figcaption></figure>
+            <figure className="award"><img src={asset(a.img)} alt="" /><figcaption>{a.text}</figcaption></figure>
           </Reveal>
         ))}
       </div>

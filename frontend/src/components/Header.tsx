@@ -2,6 +2,7 @@ import { useEffect, useState, type FormEvent } from 'react'
 import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom'
 import { NAV, SITE } from '../config'
 import { useScrolled } from '../hooks'
+import { asset } from '../asset'
 import { SearchIcon } from './Icons'
 
 export default function Header() {
@@ -35,7 +36,7 @@ export default function Header() {
       <header className={`site-header ${solid ? 'solid' : ''} ${stuck ? 'stuck' : ''}`}>
         <div className="header-in">
           <Link to="/" className="brand" onClick={closeAll} aria-label={`${SITE.name} home`}>
-            <img src="/logo.jpg" alt="" />
+            <img src={asset('/logo.jpg')} alt="" />
             <span><b>Adnyan</b><small>Foundation</small></span>
           </Link>
 

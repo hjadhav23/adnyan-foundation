@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { asset } from '../asset'
 import SmartLink from './SmartLink'
 
 const SLIDES = [
@@ -23,7 +24,7 @@ export default function Slider() {
       onMouseEnter={() => setPaused(true)} onMouseLeave={() => setPaused(false)}>
       {SLIDES.map((s, n) => (
         <div key={s.title} className={`slide ${n === i ? 'active' : ''}`} aria-hidden={n !== i}>
-          <div className="slide-bg" style={{ backgroundImage: `url(${s.image})` }} />
+          <div className="slide-bg" style={{ backgroundImage: `url(${asset(s.image)})` }} />
           <div className="slide-shade" />
           <div className="slide-content">
             <h1>{s.title}</h1>

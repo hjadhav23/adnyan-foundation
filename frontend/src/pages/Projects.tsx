@@ -1,3 +1,4 @@
+import { asset } from '../asset'
 import PageShell from '../components/PageShell'
 import Reveal from '../components/Reveal'
 
@@ -27,7 +28,7 @@ export function Ongoing() {
       <div className="card-grid">
         {ONGOING.map((p, i) => (
           <Reveal key={p.title} delay={(i % 3) * 80}>
-            <article className="card"><div className="card-img" style={{ backgroundImage: `url(${p.img})` }} /><div className="card-body"><h3>{p.title}</h3><p>{p.text}</p></div></article>
+            <article className="card"><div className="card-img" style={{ backgroundImage: `url(${asset(p.img)})` }} /><div className="card-body"><h3>{p.title}</h3><p>{p.text}</p></div></article>
           </Reveal>
         ))}
       </div>

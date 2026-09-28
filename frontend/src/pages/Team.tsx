@@ -1,3 +1,4 @@
+import { asset } from '../asset'
 import PageShell from '../components/PageShell'
 import Reveal from '../components/Reveal'
 import { useContent } from '../hooks'
@@ -12,7 +13,7 @@ export default function Team() {
         {team.map((m, i) => (
           <Reveal key={m.id ?? i} delay={i * 60}>
             <article className="member">
-              {m.photo ? <img src={m.photo} alt={m.name} /> : <div className="avatar" aria-hidden="true">{m.name.split(' ').filter((w) => /^[A-Za-z]/.test(w)).slice(0, 2).map((w) => w[0]).join('')}</div>}
+              {m.photo ? <img src={asset(m.photo)} alt={m.name} /> : <div className="avatar" aria-hidden="true">{m.name.split(' ').filter((w) => /^[A-Za-z]/.test(w)).slice(0, 2).map((w) => w[0]).join('')}</div>}
               <h3>{m.name}</h3>
               <h4>{m.role}</h4>
               <p>{m.bio}</p>

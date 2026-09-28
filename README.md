@@ -70,6 +70,19 @@ The photos were taken from your booklet at low resolution. Replace `slide-*.jpg`
 
 Create the empty repository on github.com first. `.env` files are ignored, so no secrets are uploaded. The included GitHub Actions workflow lints and builds the frontend on every push.
 
+
+### Publish the frontend on GitHub Pages (https://<user>.github.io/<repo>/)
+
+The repo name must match the base path in `frontend/package.json` (`build:pages` uses `/adnyan-foundation/`; change it if your repo has another name, and also in `.github/workflows/deploy-pages.yml` if you edit the script).
+
+1. Push the code (steps above).
+2. On GitHub: **Settings > Pages > Source: GitHub Actions**.
+3. Each push to `main` now builds and publishes the site automatically (see the Actions tab).
+
+Manual alternative: `cd frontend && npm run build:pages`, then publish the `dist/` folder.
+
+GitHub Pages hosts static files only, so forms and the admin panel do nothing there until the backend is deployed elsewhere and `VITE_API_URL` points to it. The public pages still show the built-in sample content.
+
 ## 6. Deploy on BigRock
 
 **Frontend (static files):**

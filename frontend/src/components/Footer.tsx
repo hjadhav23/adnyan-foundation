@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { asset } from '../asset'
 import { SITE } from '../config'
 import { Facebook, Instagram, LinkedIn, XIcon, YouTube } from './Icons'
 
@@ -8,7 +9,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-grid">
         <div>
-          <div className="footer-brand"><img src="/logo.jpg" alt={SITE.name} /></div>
+          <div className="footer-brand"><img src={asset('/logo.jpg')} alt={SITE.name} /></div>
           <p>{SITE.legal}. A non-profit working in education, health, women's empowerment and the environment.</p>
         </div>
         <div>

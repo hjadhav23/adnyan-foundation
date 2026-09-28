@@ -1,3 +1,4 @@
+import { asset } from '../asset'
 import PageShell from '../components/PageShell'
 import { BANK, SITE } from '../config'
 
@@ -16,7 +17,7 @@ export default function Donate() {
           </tbody></table>
           <p>After donating, please email the transaction details to <a href={`mailto:${SITE.email}`}>{SITE.email}</a> so we can send your receipt.</p>
         </div>
-        <img className="qr" src="/images/upi-qr.jpg" alt="UPI QR code to donate to Adnyan Research and Educational Trust" />
+        <img className="qr" src={asset('/images/upi-qr.jpg')} alt="UPI QR code to donate to Adnyan Research and Educational Trust" />
       </div>
     </PageShell>
   )

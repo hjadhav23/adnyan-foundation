@@ -7,7 +7,8 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "build:pages": "tsc -b && vite build --base=/adnyan-foundation/ && node -e \"import('node:fs').then(f=>f.copyFileSync('dist/index.html','dist/404.html'))\""
   },
   "dependencies": {
     "react": "^19.2.8",

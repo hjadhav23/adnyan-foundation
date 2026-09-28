@@ -1,5 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import { asset } from '../asset'
 import { api, setToken } from '../api'
 
 export default function AdminLogin() {
@@ -19,7 +20,7 @@ export default function AdminLogin() {
   return (
     <div className="admin-login">
       <form className="form panel" onSubmit={onSubmit}>
-        <img src="/logo.jpg" alt="Adnyan" width={72} />
+        <img src={asset('/logo.jpg')} alt="Adnyan" width={72} />
         <h1>Admin Login</h1>
         <label>Email<input name="email" type="email" required autoComplete="username" /></label>
         <label>Password<input name="password" type="password" required autoComplete="current-password" /></label>

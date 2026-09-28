@@ -1,3 +1,4 @@
+import { asset } from '../asset'
 import PageShell from '../components/PageShell'
 import { Link } from 'react-router-dom'
 
@@ -10,7 +11,7 @@ export default function Profile() {
           <p>The Trust has worked in the education field for more than 15 years and has been part of the Right to Education movement since 2009.</p>
           <p>We work in Mumbai slums, Palghar, Musewadi, Manohar, Vada, Shegoan, Khed, Bhiwandi, Wai, Satara and Taluka Raigad in Maharashtra. Our main objective is to bring about a lasting development of Maharashtra.</p>
         </div>
-        <img className="framed" src="/images/kids-group.jpg" alt="Children with school kits distributed by Adnyan" />
+        <img className="framed" src={asset('/images/kids-group.jpg')} alt="Children with school kits distributed by Adnyan" />
       </div>
 
       <div className="two-col">
