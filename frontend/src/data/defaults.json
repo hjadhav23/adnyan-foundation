@@ -1,0 +1,114 @@
+{
+  "announcements": [
+    {
+      "title": "Free Anna Daan for 3,600 people at Chaitya Bhoomi, Dadar on 14 April 2024",
+      "link": "/current-projects"
+    },
+    {
+      "title": "Night gowns, walkers and clothing distributed to 1,250 orphanage senior citizens in Mumbai",
+      "link": "/previous-projects"
+    },
+    {
+      "title": "Free school kits distributed to 2,750 children across Mumbai slums in 2023",
+      "link": "/current-projects"
+    },
+    {
+      "title": "Environment cleaning drive held near Kesarbaug and Venu Appartment, Dadar East",
+      "link": "/previous-projects"
+    },
+    {
+      "title": "Adnyan Research & Educational Trust completes 15 years of service",
+      "link": "/profile"
+    }
+  ],
+  "stories": [
+    {
+      "title": "Bags of Hope:",
+      "subtitle": "1,949 school kits reach slum children of Marol Pipeline, Andheri East",
+      "image": "/images/story-schoolkits.jpg",
+      "link": "/current-projects"
+    },
+    {
+      "title": "Warmth for the Elderly:",
+      "subtitle": "Night gowns and walkers for 1,250 senior citizens in Mumbai",
+      "image": "/images/story-seniors.jpg",
+      "link": "/previous-projects"
+    },
+    {
+      "title": "Meals with Dignity:",
+      "subtitle": "Anna Daan for patients and families outside Tata Memorial Hospital",
+      "image": "/images/story-annadaan.jpg",
+      "link": "/current-projects"
+    },
+    {
+      "title": "Mobility for All:",
+      "subtitle": "2,000 wheelchairs handed to hospitals and people with disabilities",
+      "image": "/images/story-wheelchairs.jpg",
+      "link": "/previous-projects"
+    }
+  ],
+  "calls": [
+    {
+      "kicker": "Call for Volunteers",
+      "title": "Anna Daan and Health Camp Volunteers, Mumbai",
+      "link": "/participate"
+    },
+    {
+      "kicker": "Call for Support",
+      "title": "Sponsor a Child: Educate Girls Globally",
+      "link": "/donate"
+    }
+  ],
+  "team": [
+    {
+      "name": "Vijay S. Shetty",
+      "role": "Managing Trustee",
+      "bio": "Leads the Trust's education, health and community programmes across Mumbai and Maharashtra.",
+      "photo": ""
+    },
+    {
+      "name": "Shirish Chilkar",
+      "role": "Team Member",
+      "bio": "Supports field programmes and distribution drives.",
+      "photo": ""
+    },
+    {
+      "name": "Adv. Prakash Jadhav",
+      "role": "Team Member",
+      "bio": "Supports the Trust's community and legal outreach.",
+      "photo": ""
+    },
+    {
+      "name": "Sanjay Dhaware",
+      "role": "Team Member",
+      "bio": "Supports school kit and relief distribution.",
+      "photo": ""
+    },
+    {
+      "name": "Ratan Asaware",
+      "role": "Team Member",
+      "bio": "Supports field programmes and local coordination.",
+      "photo": ""
+    },
+    {
+      "name": "Ramesh Gurud",
+      "role": "Team Member",
+      "bio": "Supports community events and drives.",
+      "photo": ""
+    }
+  ],
+  "stats": [
+    {
+      "label": "Years of Service",
+      "value": 15
+    },
+    {
+      "label": "School Kits Distributed",
+      "value": 2750
+    },
+    {
+      "label": "Wheelchairs Donated",
+      "value": 2000
+    }
+  ]
+}
